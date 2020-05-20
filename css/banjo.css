@@ -1,0 +1,36 @@
+.banjo-image {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 200px;
+
+}
+
+.scruggs-image {
+    border: 3px solid black;
+    border-radius: 30%;
+    width: 300px;
+    height: 300px;
+
+}
+
+h1 {
+font-family: 'Arial';
+color: white;
+background-color: black;
+max-width: 100px;
+color: #9fdfbf;
+align-content: center;
+
+}
+
+p {
+font-family: 'Arial';
+
+}
+
+body {
+    background-color: #9fdfbf;
+    text-align: center;
+
+}

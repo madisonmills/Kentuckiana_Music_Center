@@ -1,0 +1,22 @@
+.secondary-image {
+border: solid 4px black;
+border-radius: 50%;
+width: 300px;
+height: 200px;
+
+}
+
+.tertiary-image {
+
+    border: solid 3px black;
+    border-radius: 50%;
+    width: 300px;
+    height: 200px;
+
+}
+
+body {
+
+    font-family: 'Arial';
+
+}
