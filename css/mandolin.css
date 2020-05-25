@@ -1,0 +1,20 @@
+.monroe-image {
+
+border: 4px black solid;
+border-radius: 50%;
+
+
+}
+
+body {
+
+    text-align: center;
+    font-family: 'Arial';
+    background-color: #ddddbb;
+
+}
+
+h1{
+    text-decoration: underline;
+
+}

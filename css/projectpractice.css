@@ -37,7 +37,7 @@ p {
 .carters {
     border: 3px solid black;
     border-radius: 40%;
-    width: 200px;
+    width: 250px;
     height: 200px;
 
 }
@@ -46,3 +46,14 @@ div {
     border: 2px dotted black;
 
 }
+
+.secondary {
+    float: right;
+
+}
+
+.primary {
+    float: left;
+
+}
+

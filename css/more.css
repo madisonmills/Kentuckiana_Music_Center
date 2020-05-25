@@ -1,0 +1,40 @@
+.museum-image {
+border: 3px solid black;
+border-radius: 3%;
+width: 570px;
+height: 300px;
+
+
+}
+
+body {
+
+text-align:center;
+font-family: 'Arial';
+color: #000066;
+background-color: #ccccff;
+
+
+}
+
+.rompimage {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 250px;
+    height: 200px;
+}
+
+.romp2image {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 250px;
+    height: 200px;
+
+}
+
+.romp3image {
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 250px;
+    height: 200px;
+}

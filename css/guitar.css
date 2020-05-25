@@ -17,9 +17,10 @@ height: 250px;
 .fourth-image {
 
 border: solid 3px black;
-border-radius: 50%;
+border-radius: 40%;
 width: 300px;
 height: 200px;
+display: flex;
 
 }
 
@@ -27,3 +28,14 @@ p {
 font-size: 15px;
 
 }
+
+h1 {
+text-decoration: underline;
+}
+
+h6 {
+    text-align: left;
+
+
+}
+
