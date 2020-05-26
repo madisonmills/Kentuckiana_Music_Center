@@ -49,11 +49,20 @@ div {
 
 .secondary {
     float: right;
+    width: 48%;
 
 }
 
 .primary {
     float: left;
+    width: 48%;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 
 }
 
