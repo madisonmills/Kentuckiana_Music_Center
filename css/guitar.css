@@ -6,6 +6,12 @@ body {
 
 }
 
+.gohome {
+    float: right;
+    border: solid 2px black;
+    margin-right: 30px;
+}
+
 .main-image {
 
 border: solid 4px black;

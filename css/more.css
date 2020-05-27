@@ -13,7 +13,18 @@ text-align:center;
 font-family: 'Arial';
 color: #000066;
 background-color: #ccccff;
+}
 
+.gohome {
+    float: right;
+    border: solid 2px black;
+    margin-right: 20px;
+
+}
+
+.rompfest {
+    border: double;
+    padding-top: 15px;
 
 }
 
@@ -22,6 +33,7 @@ background-color: #ccccff;
     border-radius: 50%;
     width: 250px;
     height: 200px;
+    margin-right: 40px;
 }
 
 .romp2image {
@@ -29,6 +41,7 @@ background-color: #ccccff;
     border-radius: 50%;
     width: 250px;
     height: 200px;
+    margin-right: 40px;
 
 }
 
