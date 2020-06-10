@@ -14,7 +14,8 @@ width: 440px;
 .logo {
     width: 350px;
     height: 350px;
-    padding-left: 20%;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
@@ -28,9 +29,21 @@ width: 440px;
     padding-right: 10px;
 }
 
+.nav ul {
+    float: right;
+
+}
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: orange;
+}
+
 .nav li {
     display: inline;
-    float: right;
+    /* float: right; */
     padding: 5px;
     
     /* display: inline-flex; */
@@ -41,12 +54,6 @@ width: 440px;
     content: "";
     display: table;
     clear: both;
-}
-
-.form {
-    width: 250px;
-    font-size: 13px;
-
 }
 
 
@@ -68,6 +75,7 @@ text-align: left;
     border: 2px solid black;
     width: 180px;
     padding-left: 20px;
+    margin-bottom: 50px;
 }
 
 .pricing {
@@ -91,5 +99,36 @@ text-align: left;
   }
 
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* Rentals Page Content */
+.rentals, .quality {
+border: 2px solid black;
+margin-top: 30px;
+margin-bottom: 50px;
+width: 300px;
+text-align: left;
+padding-left: 20px;
+}
+
+.quality {
+    width: 420px;
+    padding-right: 20px;
+}
 
 
+/* Contact Page Content */
+
+.form {
+    width: 250px;
+    font-size: 18px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+}
