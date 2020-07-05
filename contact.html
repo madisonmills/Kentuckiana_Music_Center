@@ -23,13 +23,13 @@
 <div class="form">
     
     <p>To request more information, or for questions, fill out the form below:</p>
-<form>
+<form name="myForm" onsubmit="return validateForm()" method="post">
     <fieldset>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name">
     <br>
     <label for="email">Email:</label>
-    <input type="text" id="email" name="email">
+    <input type="text" id="email" name="email" required>
     <br>
     <label for="moreinfo">Questions:</label>
     <textarea id="moreinfo" name="moreinfo"></textarea>
