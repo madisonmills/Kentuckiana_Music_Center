@@ -12,10 +12,11 @@ width: 440px;
 } */
 
 .logo {
-    width: 350px;
-    height: 350px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 225px;
+    height: 225px;
+    /* margin-right: auto;
+    margin-left: auto; */
+    align-self: center;
 
 }
 
@@ -25,36 +26,51 @@ width: 440px;
     margin-left: auto;
     margin-right: auto; 
     margin-bottom: 30px;
+    margin-top: 50px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.nav ul {
-    float: right;
-
+.main-header,
+.nav {
+    display: flex;
+    flex-direction: column;
 }
-a:hover {
+
+.main-header {
+    padding-top: 2em;
+}
+
+.nav {
+    margin-top: 1.5em;
+    list-style: none;
+}
+
+.nav a {
+    display: block;
+    font-family: Georgia;
+    font-size: 1.1em;
+    font-weight: 100;
+    text-align: center;
+    padding: .4em;
+    border-bottom: 1px solid black;
+}
+
+.nav a:hover {
     color: blue;
+    border-bottom-color: gray;
 }
 
-a:active {
+.nav a:active {
     color: orange;
 }
 
-.nav li {
-    display: inline;
-    /* float: right; */
-    padding: 5px;
-    
-    /* display: inline-flex; */
 
-}
-
-.clearfix::before {
+/* .clearfix::after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 
 /* Lessons Page Content */
@@ -71,7 +87,6 @@ h4 {
     color: red;
     text-transform: uppercase;
 }
-
 
 .instruments {
 text-align: left;
@@ -130,10 +145,47 @@ footer {
     padding: 10px;
 }
 
+/* ----- Media Queries ----- */ 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .teachers {width: 100%;}
+} */
+
+@media (min-width: 769px) {
+    .main-header {
+        height: 200px;
+        justify-content: flex-end;
+    }
+    .site-logo {
+        width: 140px;
+    }
+    .nav {
+        margin-top: 2em;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav a {
+        border-bottom-color: transparent;
+    }
+    ]}
+
+@media (min-width: 1025px) {
+    .main-header {
+        flex-direction: row;
+    }
+    .site-logo {
+        margin-right: auto;
+    }
+    .nav {
+        margin-top: 0;
+        align-self: center;
+    }
+    .nav li {
+        margin-left: .65em;
+        margin-right: .65em;
+    }
 }
+/* ----- End Media Queries ----- */
 
 /* Rentals Page Content */
 .rentals, .quality {
