@@ -3,14 +3,6 @@ body {
     font-family: 'Palatino';
 }
 
-/* h1 {
-font-family: 'Georgia';
-font-size: 50px;
-color: blue;
-background-color: yellow;
-width: 440px;
-} */
-
 .logo {
     width: 225px;
     height: 225px;
@@ -46,6 +38,10 @@ width: 440px;
     list-style: none;
 }
 
+.nav ul {
+    text-align: center;
+}
+
 .nav a {
     display: block;
     font-family: Georgia;
@@ -53,25 +49,17 @@ width: 440px;
     font-weight: 100;
     text-align: center;
     padding: .4em;
-    border-bottom: 1px solid black;
+    text-decoration: none;
 }
 
 .nav a:hover {
-    color: blue;
+    color: orange;
     border-bottom-color: gray;
 }
 
-.nav a:active {
+/* .nav a:active {
     color: orange;
-}
-
-
-/* .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
 } */
-
 
 /* Lessons Page Content */
 
@@ -94,30 +82,31 @@ text-align: left;
 
 .lessons {
     border: 2px solid black;
-    width: 180px;
+    width: 80%;
     padding-left: 50px;
-    margin-bottom: 100px;
-    float: left;
+    margin: auto;
+    margin-bottom: 50px;
     
 }
 
 .pricing {
     border: 2px solid black;
     text-align: left;
-    width: 330px;
+    width: 80%;
     padding-left: 30px;
     padding-right: 30px;
-    float: right;
+    margin: auto;
     margin-bottom: 50px;
 }
 
 .teachers {
     border: 2px solid black;
-    width: 650px;
+    width: 80%;
     margin-top: 30px;
     padding-right: 30px;
     padding-left: 30px;
     overflow: auto;
+    margin: auto;
 }
 
 aside{
@@ -125,12 +114,6 @@ aside{
     margin: auto;
     
 }
-
-/* .piano {
-    width: 300px;
-    height: 450px;
-
-} */
 
 .pay {
     width: 500px;
@@ -146,6 +129,36 @@ aside{
     margin: auto;
   }
 
+  .prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    
+  }
+
+  #pic-one {
+      height: 200px;
+      width: 125px;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
 
 footer {
     background-color: black;
@@ -153,11 +166,43 @@ footer {
     padding: 10px;
 }
 
-/* ----- Media Queries ----- */ 
+/* Rentals Page Content */
+.rentals, .quality {
+border: 2px solid black;
+margin-top: 30px;
+margin-bottom: 50px;
+width: 80%;
+text-align: left;
+padding-left: 20px;
+margin: auto;
+}
 
-/* @media (max-width: 600px) {
-    .teachers {width: 100%;}
-} */
+.instrumentrentals li:nth-of-type(even){
+    background-color: #efefef;
+}
+
+.quality li:nth-of-type(even){
+    background-color: #efefef;
+}
+
+/* Shop Page Content */
+
+.shopguitar {
+    width: 85%;
+}
+
+/* Contact Page Content */
+
+.form {
+    width: 300px;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+/* ----- Media Queries ----- */ 
 
 @media (min-width: 769px) {
     .main-header {
@@ -175,18 +220,29 @@ footer {
     .nav a {
         border-bottom-color: transparent;
     }
-    ]}
+
+    .lessons, .rentals {
+        width: 40%;
+        float: left;
+    }
+
+    .pricing, .quality {
+        width: 40%;
+        float: right;
+    }
+    .container {
+        overflow: auto;
+    }
+    }
 
 @media (min-width: 1025px) {
     .main-header {
         flex-direction: row;
+        justify-content: space-between;
     }
-    .site-logo {
-        margin-right: auto;
-    }
+  
     .nav {
         margin-top: 0;
-        align-self: center;
     }
     .nav li {
         margin-left: .65em;
@@ -194,31 +250,3 @@ footer {
     }
 }
 /* ----- End Media Queries ----- */
-
-/* Rentals Page Content */
-.rentals, .quality {
-border: 2px solid black;
-margin-top: 30px;
-margin-bottom: 50px;
-width: 300px;
-text-align: left;
-padding-left: 20px;
-}
-
-.quality {
-    width: 420px;
-    padding-right: 20px;
-}
-
-
-/* Contact Page Content */
-
-.form {
-    width: 250px;
-    font-size: 16px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-
-}
