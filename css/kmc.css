@@ -1,11 +1,13 @@
+/* Main Page Styling */ 
+
 body {
     text-align: center;
     font-family: 'Palatino';
 }
 
 .logo {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     /* margin-right: auto;
     margin-left: auto; */
     align-self: center;
@@ -56,10 +58,6 @@ body {
     color: orange;
     border-bottom-color: gray;
 }
-
-/* .nav a:active {
-    color: orange;
-} */
 
 /* Lessons Page Content */
 
