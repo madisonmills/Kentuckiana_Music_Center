@@ -264,15 +264,15 @@ margin: auto;
     }
 
     #pic-one {
-        width: 250px;
-        height: 275px;
+        width: 290px;
+        height: 315px;
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
     #pic-one { 
-        width: 100px;
-        height: 115px;
+        width: 115px;
+        height: 100px;
     }
     .logo {
         width: 150px;
