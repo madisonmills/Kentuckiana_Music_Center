@@ -8,8 +8,6 @@ body {
 .logo {
     width: 200px;
     height: 200px;
-    /* margin-right: auto;
-    margin-left: auto; */
     align-self: center;
 
 }
@@ -69,6 +67,10 @@ h2 {
 text-align: left;
 }
 
+h3 {
+    border: 1px solid black;
+}
+
 h4 {
     color: red;
     text-transform: uppercase;
@@ -107,6 +109,11 @@ text-align: left;
     margin: auto;
 }
 
+.charlie {
+    width: 215px;
+    height: 225px;
+}
+
 aside{
     width: 800px;
     margin: auto;
@@ -135,11 +142,6 @@ aside{
     font-size: 18px;
     border-radius: 0 3px 3px 0;
     
-  }
-
-  #pic-one {
-      height: 200px;
-      width: 125px;
   }
 
   .dot {
@@ -175,18 +177,29 @@ padding-left: 20px;
 margin: auto;
 }
 
+#pic-one {
+    height: 200px;
+    width: 175px;
+    border: 2px solid black;
+    border-radius: 3%;
+}
+
 .instrumentrentals li:nth-of-type(even){
-    background-color: #efefef;
+    background-color: #e6e6e6;
 }
 
 .quality li:nth-of-type(even){
-    background-color: #efefef;
+    background-color: #e6e6e6;
 }
 
 /* Shop Page Content */
 
 .shopguitar {
     width: 85%;
+}
+
+.stringsfam {
+    width: 50%;
 }
 
 /* Contact Page Content */
@@ -199,12 +212,15 @@ margin: auto;
     margin-right: auto;
     margin-bottom: 50px;
 }
+.owners {
+    width: 300px;
+    height: 300px;
+}
 
 /* ----- Media Queries ----- */ 
 
 @media (min-width: 769px) {
     .main-header {
-        height: 200px;
         justify-content: flex-end;
     }
     .site-logo {
@@ -231,6 +247,7 @@ margin: auto;
     .container {
         overflow: auto;
     }
+
     }
 
 @media (min-width: 1025px) {
@@ -238,13 +255,28 @@ margin: auto;
         flex-direction: row;
         justify-content: space-between;
     }
-  
     .nav {
         margin-top: 0;
     }
     .nav li {
         margin-left: .65em;
         margin-right: .65em;
+    }
+
+    #pic-one {
+        width: 250px;
+        height: 275px;
+    }
+}
+
+@media (max-width: 415px) {
+    #pic-one { 
+        width: 100px;
+        height: 115px;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
     }
 }
 /* ----- End Media Queries ----- */
